@@ -1,0 +1,27 @@
+version: 2
+enable-beta-ecosystems: true
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pub"
+    directory: "/cardinal"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pub"
+    directory: "/cardinal/example"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pub"
+    directory: "/cardinal_platform_interface"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pub"
+    directory: "/cardinal_android"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pub"
+    directory: "/cardinal_ios"
+    schedule:
+      interval: "daily"
