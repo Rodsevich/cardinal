@@ -17,8 +17,12 @@ class CardinalPlugin : FlutterPlugin, MethodCallHandler {
     }
 
     override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
-        if (call.method == "getPlatformName") {
+        if (call.method == "setUp") {
+            //@TODO(Jei): implementar setUp
+            // call.args?
             result.success("Android ${android.os.Build.VERSION.RELEASE}")            
+        } else if (call.method == "launchChallenge") {
+            result.success("Android ${android.os.Build.VERSION}")            
         } else {
             result.notImplemented()
         }

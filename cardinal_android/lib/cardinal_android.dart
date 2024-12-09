@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 /// The Android implementation of [CardinalPlatform].
+//TODO(Jei): implementar metodos
 class CardinalAndroid extends CardinalPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting

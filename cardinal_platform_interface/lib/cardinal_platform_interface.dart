@@ -28,6 +28,13 @@ abstract class CardinalPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  /// Return the current platform name.
-  Future<String?> getPlatformName();
+  /// The setup method is called when the plugin is initialized.
+  //TODO(Jei): definir bien los argumentos
+  Future<bool?> setUp(String token, int sarasa);
+
+  /// The main operation of Cardinal
+  //TODO(Jei): definir bien los argumentos
+  Future<String?> launchChallenge(String incognita1, String incognita2);
+
+  
 }

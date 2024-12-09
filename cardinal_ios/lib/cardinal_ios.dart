@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 /// The iOS implementation of [CardinalPlatform].
+//TODO(Jei): implementar metodos
 class CardinalIOS extends CardinalPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
